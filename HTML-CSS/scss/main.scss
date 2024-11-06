@@ -1,0 +1,8 @@
+@mixin mixinEx($color, $font, $margin){
+    width: $width;
+    font-size: $font;
+    margin: $margin;
+}
+.buttons{
+    @include mixinEx(25%, 1.8em, 0.7% 0)
+}

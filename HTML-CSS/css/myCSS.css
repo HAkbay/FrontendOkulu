@@ -1,0 +1,10 @@
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+.buttons{
+    width: 25%;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 0.7% 0;
+}
