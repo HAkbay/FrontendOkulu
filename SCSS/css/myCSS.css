@@ -2,7 +2,8 @@
     display: flex;
     flex-wrap: wrap;
 }
-.buttons{
+
+.buttons {
     width: 25%;
     text-align: center;
     font-size: 1.8em;
