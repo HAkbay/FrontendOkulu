@@ -354,8 +354,10 @@ function UI() { }
 UI.prototype.addToUI = function (newText) {
     const text = document.getElementById("text-area")
     text.innerHTML += `
-    <li>${newText.title}</li>
-    <li>${newText.text}</li>
+    <tr>
+        <td class="width-25">${newText.title}</td>
+        <td class="width-25">${newText.text}</td>
+    </tr>
     `
 }
 
@@ -368,8 +370,10 @@ UI.prototype.loadAllText = function (text) {
     const textList = document.getElementById("text-area")
     text.forEach(function (text) {
         textList.innerHTML += `
-        <li>${text.title}</li>
-        <li>${text.text}</li>
+        <tr>
+            <td class="width-25">${text.title}</td>
+            <td class="width-25">${text.text}</td>
+        </tr>
         `
     })
 }

@@ -42,8 +42,16 @@
         <button id="clear-text">Delete all from storage</button>
         <div class="card-body">
             <hr>
-            <table></table>
-            <div id="text-area"></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="width-25" scope="col">Title</th>
+                        <th class="width-25" scope="col">Text</th>
+                    </tr>
+                </thead>
+                <tbody id="text-area"></tbody>
+            </table>
+            <hr>
         </div>
     </div>
     <script src="app.js"></script>
@@ -53,12 +61,20 @@
         text-align: center;
     }
 
+    .card-body {
+        display: block;
+    }
+
     .align-center {
         margin: auto;
     }
 
     .border-radius {
         border-radius: 8px;
+    }
+
+    .width-25 {
+        width: 25%;
     }
 
     #buttonDiv {
