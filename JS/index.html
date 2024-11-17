@@ -13,6 +13,39 @@
         <div id="buttonDiv" class="red border-radius text-center align-center"></div>
     </div>
     <button id="darkMode" class="border-radius cyan align-center">Dark Mode</button>
+    <button id="data">Get HTML Data</button>
+    <div class="container">
+        <button id="getButton">Get JSON Data</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Age</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody id="employees"></tbody>
+        </table>
+    </div>
+    <div>
+        <button id="apiData">Get API Data</button>
+        <div id="posts"></div>
+    </div>
+    <hr>
+    <div class="card-body">
+        <form id="text-form" name="form">
+            <input type="text" placeholder="title" name="title" id="title">
+            <input type="text" placeholder="text" name="text" id="text">
+            <button id="add-to-storage">Add text to local storage</button>
+        </form>
+        <button id="clear-text">Delete all from storage</button>
+        <div class="card-body">
+            <hr>
+            <table></table>
+            <div id="text-area"></div>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 <style>
@@ -29,18 +62,26 @@
     }
 
     #buttonDiv {
-        text-align: center;
         width: 10%;
         padding: 0.5%;
     }
 
     .red {
-        text-align: center;
         background-color: red;
     }
 
     .cyan {
         background-color: cyan;
+    }
+
+    .alert-success {
+        background-color: green;
+        color: white;
+    }
+
+    .alert-err {
+        background-color: red;
+        color: white;
     }
 
     #darkMode {
